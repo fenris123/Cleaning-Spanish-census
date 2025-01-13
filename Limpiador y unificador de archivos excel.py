@@ -88,8 +88,8 @@ for archivo in os.listdir(ruta_carpeta):
         sheet.cell(row=1, column=3, value="COD_MUN")
         sheet.cell(row=1, column=4, value="MUNICIPIO")
         sheet.cell(row=1, column=5, value=f"POB_{year}")
-        sheet.cell(row=1, column=6, value="HOMBRES")
-        sheet.cell(row=1, column=7, value="MUJERES")
+        sheet.cell(row=1, column=6, value=f"HOMBRES_{year}")
+        sheet.cell(row=1, column=7, value=f"MUJERES_{year}")
 
         # Guardar el archivo modificado
         wb.save(ruta_archivo)
